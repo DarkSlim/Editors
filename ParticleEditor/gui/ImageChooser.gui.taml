@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuiControl Extent="1024 768" Name="GuiImageChooser" HorizSizing="center" VertSizing="center">
+  <GuiWindowCtrl Extent="1024 768" HorizSizing="center" Name="IMGCHSWIN" VertSizing="center" canClose="false" canMaximize="false" canMinimize="false" canMove="false" Profile="SandboxWindowProfile"></GuiWindowCtrl>
+</GuiControl>

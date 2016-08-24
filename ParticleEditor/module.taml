@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModuleDefinition ModuleId="ParticleEditor" VersionId="1" Description="Particle Effect Editor" Dependencies="ToyAssets=1" Group="Editors" ScriptFile="main.cs" CreateFunction="create" DestroyFunction="destroy"></ModuleDefinition>

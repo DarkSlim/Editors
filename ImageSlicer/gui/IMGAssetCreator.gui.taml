@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuiControl Name="ImageSlicer_MainGUI" Profile="GuiDefaultProfile" Extent="1024 768">
+  <GuiBitmapCtrl bitmap="modules/Utilities/GuiModule/assets/gui/blueGradient.png" Extent="1024 768" />
+  <GuiStackControl Extent="1024 768" StackingType="Horizontal" HorizStacking="Left to Right">
+    <SceneWindow Name="ImageAsset_SW" Extent="800 768" UseObjectInputEvents="true" UseWindowInputEvents="true" />
+    <GuiStackControl StackingType="Vertical" VertStacking="Top to Bottom" Extent="224 768">
+      <GuiStackControl StackingType="Horizontal" HorizStacking="Left to Right" Extent="224 30">
+        <GuiTextCtrl text="Frame Name" Profile="GuiInspectorTextEditCenterProfile" Extent="70 20" />
+        <GuiTextEditCtrl Profile="GuiTextEditProfile" Extent="120 20" Name="FrameNameGUI" />
+        <GuiButtonCtrl text="X" Profile="RedButtonProfile" Command="ImageSlicer.popnquit();" Extent="40 20" />
+      </GuiStackControl>
+      <GuiCheckBoxCtrl Name="IMGFilterToggleGUI" text="Bilinear Filtering" />
+      <GuiCheckBoxCtrl Name="IMGCellrowOrderToggleGUI" text="CellRowOrder" />
+      <GuiStackControl StackingType="Horizontal" HorizStacking="Left to Right" Extent="224 30">
+        <GuiTextCtrl text="Asset Size" Profile="GuiInspectorTextEditCenterProfile" Extent="70 20" />
+        <GuiTextEditCtrl Profile="GuiTextEditProfile" Extent="60 20" Name="AssetWidthGUI" />
+        <GuiTextEditCtrl Profile="GuiTextEditProfile" Extent="60 20" Name="AssetHeightGUI" />
+      </GuiStackControl>
+      <GuiStackControl Name="IMGSlicerStack" StackingType="Vertical" VertStacking="Top to Bottom">
+        <GuiPopUpMenuCtrl Name="SliceModeMenuGUI" Profile="GuiPopUpMenuProfile" Extent="200 40" />
+      </GuiStackControl>
+      <GuiTextCtrl text="Asset Name" Profile="GuiInspectorTextEditCenterProfile" Extent="70 20"></GuiTextCtrl>
+      <GuiTextEditCtrl Name="IMGAssetNameGUI" Profile="GuiTextEditProfile" Extent="180 46" />
+      <GuiButtonCtrl Profile="BlueButtonProfile" text="Apply &amp; Save" Command="ImageSlicer.saveasset();" />
+    </GuiStackControl>
+  </GuiStackControl>
+</GuiControl>

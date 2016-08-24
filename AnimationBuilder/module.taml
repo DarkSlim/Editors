@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModuleDefinition ModuleId="AnimationBuilder" VersionId="1" Description="Animation builder" Group="Editors" ScriptFile="main.cs" CreateFunction="create" DestroyFunction="destroy"></ModuleDefinition>

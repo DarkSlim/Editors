@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuiControl Name="PFX_Preview">
+  <GuiScrollCtrl Extent="250 768" Position="0 0" VertSizing="bottom" Profile="GuiLightScrollProfile" HorizSizing="right" hScrollBar="alwaysOff" Visible="1" childMargin="1" Active="1" vScrollBar="alwaysOn">
+    <GuiRolloutCtrl HorizSizing="right" Name="PFX_EffectRollout" VertSizing="bottom" ClickCollapse="false" Profile="GuiInspectorGroupProfile" Position="0 0" Extent="235 768" />
+  </GuiScrollCtrl>
+  <GuiScrollCtrl Extent="250 768" Position="-185 0" VertSizing="bottom" Profile="GuiLightScrollProfile" hScrollBar="alwaysOff" HorizSizing="left" Visible="1" childMargin="1" Active="1" vScrollBar="alwaysOn">
+    <GuiStackControl StackingType="Vertical" Name="EmittersScroll" VertStacking="Top to Bottom" Extent="235 768" Profile="GuiSunkenContainerProfile" />
+  </GuiScrollCtrl>
+  <GuiWindowCtrl HorizSizing="center" VertSizing="bottom" Position="0 -20" text="" isContainer="true" canMaximize="false" canClose="false" canMove="false" canMinimize="false" Profile="SandboxWindowProfile" Extent="524 524">
+    <SceneWindow Extent="524 524" Name="PFX_SW"></SceneWindow>
+    <GuiPaneControl Caption="Effect Tranport Controls" VertSizing="bottom" Position="0 464" Profile="GuiSunkenContainerProfile" HorizSizing="center" Extent="400 64">
+      <GuiStackControl StackingType="Horizontal" HorizStacking="Left to Right" Extent="524 32">
+        <GuiStackControl StackingType="Horizontal" VertStacking="Top to Bottom" Padding="5 0" Extent="300 32" Profile="GuiSunkenContainerProfile">
+          <GuiBitmapButtonCtrl bitmap="modules/Editors/ParticleEditor/gui/images/focusButton" Extent="28 32" Command="ParticleEditor.ZoomToEffect();" ToolTip="Focus" tooltipprofile="GuiToolTipProfile" tooltipWidth="250"></GuiBitmapButtonCtrl>
+          <GuiBitmapButtonCtrl bitmap="modules/Editors/ParticleEditor/gui/images/playButton" Extent="28 32" Command="ParticleEditor.PlayEffect();"></GuiBitmapButtonCtrl>
+          <GuiBitmapButtonCtrl bitmap="modules/Editors/ParticleEditor/gui/images/pauseButton" Extent="28 32" Command="ParticleEditor.PauseEffect();"></GuiBitmapButtonCtrl>
+          <GuiBitmapButtonCtrl bitmap="modules/Editors/ParticleEditor/gui/images/stopButton" Extent="28 32" Command="ParticleEditor.StopEffect();"></GuiBitmapButtonCtrl>
+        </GuiStackControl>
+        <GuiButtonCtrl Profile="RedButtonProfile" text="X" Extent="40 20" Command="ParticleEditor.popnquit();" />
+        <GuiButtonCtrl text="Save PFX" Extent="60 20" Profile="GreenButtonProfile" Command="ParticleEditor.SavePFX();" />
+      </GuiStackControl>
+    </GuiPaneControl>
+  </GuiWindowCtrl>
+  <GuiScrollCtrl HorizSizing="right" VertSizing="bottom" Profile="GuiLightScrollProfile" Position="240 512" Extent="250 200" hScrollBar="alwaysOff" vScrollBar="alwaysOn" childMargin="5 0">
+    <GuiStackControl StackingType="Vertical" Name="ValueStack" VertStacking="Top to Bottom" Padding="5 0" Extent="215 200" Profile="GuiSunkenContainerProfile"></GuiStackControl>
+  </GuiScrollCtrl>
+</GuiControl>

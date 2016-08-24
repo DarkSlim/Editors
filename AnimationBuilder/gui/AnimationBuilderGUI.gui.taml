@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuiControl Name="AB_Main_GUI" Extent="1024 768">
+  <GuiBitmapCtrl bitmap="modules/Utilities/GuiModule/assets/gui/blueGradient.png" Extent="1024 768" />
+  <GuiStackControl Extent="1024 768" StackingType="Horizontal" HorizStacking="Left to Right">
+    <GuiStackControl StackingType="Vertical" VertStacking="Top to Bottom" Extent="300 708">
+      <GuiScrollCtrl Extent="300 708" hScrollBar="alwaysOff" vScrollBar="alwaysOn" Profile="GuiLightScrollProfile">
+        <GuiListBoxCtrl Profile="GuiListBoxProfile" AllowMultipleSelections="false" Name="ImageAssetSelectorGUI" />
+      </GuiScrollCtrl>
+      <GuiButtonCtrl Profile="BlueButtonProfile" text="Refresh" Extent="80 40" Command="AnimationBuilder.PopulateAssetList();" />
+    </GuiStackControl>
+    <GuiStackControl Extent="512 768" StackingType="Vertical" VertStacking="Top to Bottom">
+      <SceneWindow Name="ImageAssetPreviewGUI" Extent="512 512"></SceneWindow>
+      <GuiStackControl Extent="512 46" StackingType="Horizontal" HorizStacking="Left to Right">
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="Previous Frame" Command="AnimationBuilder.prevframe();" />
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="Next Frame" Command="AnimationBuilder.nextframe();" />
+        <GuiTextCtrl Name="FrameonTotalLabel" HorizSizing="center" Extent="50 46" />
+        <GuiButtonCtrl Profile="GreenButtonProfile" Extent="50 46" text="Dump" Command="AnimationBuilder.Dumpallframes();" />
+        <GuiCheckBoxCtrl text="Cycle" Name="ANMCycleToggle" Extent="65 46" />
+        <GuiCheckBoxCtrl text="RND" Name="ANMRandStartToggle" />
+      </GuiStackControl>
+    </GuiStackControl>
+    <GuiStackControl Extent="212 768" StackingType="Vertical" VertStacking="Top to Bottom">
+      <SceneWindow Name="AnimPreviewSW" Extent="212 212"></SceneWindow>
+      <GuiScrollCtrl Extent="212 250" hScrollBar="alwaysOff" vScrollBar="alwaysOn" Profile="GuiLightScrollProfile">
+        <GuiListBoxCtrl Profile="GuiListBoxProfile" AllowMultipleSelections="false" Name="ANMFrameList" />
+      </GuiScrollCtrl>
+      <GuiSliderCtrl Profile="GuiSliderProfile" range="0 3" Name="AnimSpeedSlider" Position="1" HorizSizing="center" Extent="212 46" />
+      <GuiStackControl Extent="212 46" StackingType="Horizontal" HorizStacking="Left to Right">
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="Duplicate" Command="AnimationBuilder.duplicateframe();" Extent="80 46" />
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="-" Command="AnimationBuilder.removeframe();" Extent="40 46" />
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="+" Command="AnimationBuilder.addframe();" Extent="40 46" />
+        <GuiButtonCtrl Command="AnimationBuilder.saveAsset();" text="SAVE" Extent="52 46" Profile="GreenButtonProfile" />
+      </GuiStackControl>
+      <GuiStackControl Extent="212 46" StackingType="Horizontal" HorizStacking="Left to Right">
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="&lt;&lt;" Command="AnimationBuilder.prevframeANM();" Extent="60 46" />
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="&gt;&gt;" Command="AnimationBuilder.nextframeANM();" Extent="60 46" />
+        <GuiButtonCtrl Profile="BlueButtonProfile" text="Play/Pause" Command="AnimationBuilder.playpauseANM();" Extent="92 46" />
+      </GuiStackControl>
+      <GuiStackControl Extent="212 46" StackingType="Horizontal" HorizStacking="Left to Right">
+        <GuiTextEditCtrl Profile="GuiTextEditProfile" Name="AnimassetnameGUI" Extent="120 20" />
+        <GuiButtonCtrl text="X" Profile="RedButtonProfile" Command="AnimationBuilder.popnquit();" Extent="40 20" />
+      </GuiStackControl>
+    </GuiStackControl>
+  </GuiStackControl>
+</GuiControl>

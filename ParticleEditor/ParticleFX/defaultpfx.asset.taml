@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParticleAsset AssetName="Default Particle FX">
+  <ParticleAssetEmitter EmitterName="smoke" EmitterType="LINE" EmitterOffset="0 1" EmitterSize="0.5 0" FixedForceAngle="90" OldestInFront="1" Image="@asset=ToyAssets:Particles4" Frame="0">
+    <ParticleAssetEmitter.Fields>
+      <Quantity MinValue="0" MaxValue="1e+005" MaxTime="1000" DefaultValue="10" />
+      <LifetimeVariation MinValue="0" MaxValue="5000" MaxTime="1000" DefaultValue="0">
+        <Key Time="0" Value="1" />
+      </LifetimeVariation>
+      <EmissionArc MinValue="0" MaxValue="360" MaxTime="1000" DefaultValue="360">
+        <Key Time="0" Value="0" />
+      </EmissionArc>
+      <Speed MinValue="0" MaxValue="100" MaxTime="1000" DefaultValue="10">
+        <Key Time="0" Value="0.3" />
+      </Speed>
+      <SizeXVariation MinValue="0" MaxValue="200" MaxTime="1000" DefaultValue="0">
+        <Key Time="0" Value="0.3" />
+      </SizeXVariation>
+      <FixedForce MinValue="-1000" MaxValue="1000" MaxTime="1000" DefaultValue="0" />
+      <SizeXLife MinValue="-100" MaxValue="100">
+        <Key Time="0" Value="0" />
+        <Key Time="0.2" Value="1" />
+        <Key Time="0.5" Value="1" />
+        <Key Time="0.9" Value="1" />
+        <Key Time="1" Value="0" />
+      </SizeXLife>
+      <FixedForceVariation MinValue="0" MaxValue="2000" MaxTime="1000" DefaultValue="0" />
+      <SpinVariation MinValue="0" MaxValue="2000" MaxTime="1000" DefaultValue="0">
+        <Key Time="0" Value="360" />
+      </SpinVariation>
+      <SpeedVariation MinValue="0" MaxValue="200" MaxTime="1000" DefaultValue="0">
+        <Key Time="0" Value="0.1" />
+      </SpeedVariation>
+      <AlphaChannel MinValue="0" MaxValue="1">
+        <Key Time="0" Value="0" />
+        <Key Time="0.2" Value="0.15" />
+        <Key Time="1" Value="0" />
+      </AlphaChannel>
+      <EmissionAngle MinValue="-180" MaxValue="180" MaxTime="1000" DefaultValue="0">
+        <Key Time="0" Value="90" />
+      </EmissionAngle>
+    </ParticleAssetEmitter.Fields>
+  </ParticleAssetEmitter>
+</ParticleAsset>

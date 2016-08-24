@@ -1,0 +1,10 @@
+<ImageAsset
+    AssetName="ExpGhost"
+    ImageFile="@assetFile=ExpGhost.png"
+    FilterMode="NEAREST"
+    CellCountX="1"
+    CellCountY="1"
+    CellWidth="1"
+    CellHeight="1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../Torque2d.xsd" />
